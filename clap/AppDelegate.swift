@@ -2,12 +2,10 @@
 //  AppDelegate.swift
 //  clap
 //
-//  Created by 谷　章太郎 on 2015/08/24.
-//  Copyright (c) 2015年 shotarotani. All rights reserved.
-//
+//  Created by 共田 恭輔 on 2016/01/17.
+//  Copyright © 2016年 共田 恭輔. All rights reserved.
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

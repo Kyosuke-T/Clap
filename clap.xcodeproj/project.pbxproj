@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E236E0C71B8AA58500C1C8A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E236E0C61B8AA58500C1C8A7 /* AVFoundation.framework */; };
+		E236E0CA1B8AA5B800C1C8A7 /* clap-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E236E0C81B8AA5B800C1C8A7 /* clap-button.png */; };
+		E236E0CB1B8AA5B800C1C8A7 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E236E0C91B8AA5B800C1C8A7 /* clap.wav */; };
 		E291C5A21B8AA4E200757F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291C5A11B8AA4E200757F2C /* AppDelegate.swift */; };
 		E291C5A41B8AA4E200757F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291C5A31B8AA4E200757F2C /* ViewController.swift */; };
 		E291C5A71B8AA4E200757F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E291C5A51B8AA4E200757F2C /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E236E0C61B8AA58500C1C8A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E236E0C81B8AA5B800C1C8A7 /* clap-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clap-button.png"; sourceTree = "<group>"; };
+		E236E0C91B8AA5B800C1C8A7 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 		E291C59C1B8AA4E200757F2C /* clap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E291C5A01B8AA4E200757F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E291C5A11B8AA4E200757F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E236E0C71B8AA58500C1C8A7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		E291C5931B8AA4E200757F2C = {
 			isa = PBXGroup;
 			children = (
+				E236E0C61B8AA58500C1C8A7 /* AVFoundation.framework */,
 				E291C59E1B8AA4E200757F2C /* clap */,
 				E291C5B41B8AA4E200757F2C /* clapTests */,
 				E291C59D1B8AA4E200757F2C /* Products */,
@@ -82,6 +90,8 @@
 				E291C5A51B8AA4E200757F2C /* Main.storyboard */,
 				E291C5A81B8AA4E200757F2C /* Images.xcassets */,
 				E291C5AA1B8AA4E200757F2C /* LaunchScreen.xib */,
+				E236E0C81B8AA5B800C1C8A7 /* clap-button.png */,
+				E236E0C91B8AA5B800C1C8A7 /* clap.wav */,
 				E291C59F1B8AA4E200757F2C /* Supporting Files */,
 			);
 			path = clap;
@@ -156,7 +166,9 @@
 		E291C5941B8AA4E200757F2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = shotarotani;
 				TargetAttributes = {
 					E291C59B1B8AA4E200757F2C = {
@@ -192,9 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E236E0CB1B8AA5B800C1C8A7 /* clap.wav in Resources */,
 				E291C5A71B8AA4E200757F2C /* Main.storyboard in Resources */,
 				E291C5AC1B8AA4E200757F2C /* LaunchScreen.xib in Resources */,
 				E291C5A91B8AA4E200757F2C /* Images.xcassets in Resources */,
+				E236E0CA1B8AA5B800C1C8A7 /* clap-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +290,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = clap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = clap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +387,7 @@
 				);
 				INFOPLIST_FILE = clapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clap.app/clap";
 			};
@@ -385,6 +403,7 @@
 				);
 				INFOPLIST_FILE = clapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clap.app/clap";
 			};
@@ -409,6 +428,7 @@
 				E291C5BD1B8AA4E200757F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E291C5BE1B8AA4E200757F2C /* Build configuration list for PBXNativeTarget "clapTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +437,7 @@
 				E291C5C01B8AA4E200757F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
